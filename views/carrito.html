@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Carrito" />
+    <meta name="keywords" content="Carrito" />
+    <title>Carrito</title>
+
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="estilos/estiloSas.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/sweetalert2.all.js"></script>
+    <script src="src/sweetAlert.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="divHeader">ABRIGOS PARA EL MUNDO</header>
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#opciones"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- logo -->
+
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul id="ulMenu" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">Carrito</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <form>
+        <div class="container">
+          <h2 class="headerContacto">Productos adicionados</h2>
+          <p></p>
+
+          <div class="table-responsive">
+            <table class="table table-hover" id="tb_listCarrito">
+              <thead>
+                <tr class="TblbgSuccess">
+                  <th>SKU</th>
+                  <th>Producto</th>
+                  <th>Cantidad</th>
+                  <th>Precio($)</th>
+                  <th>SubTotal</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tbody id="tb_listCarritoBody">
+                <!-- -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr class="TblbgSuccess">
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="tb_listSubTotalesBody">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><label for="subtotal">SubTotal($)</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      id="txt_subtotal"
+                      value="0"
+                      class="form-control col-12"
+                      disabled
+                    />
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><label for="subtotal">Impuesto($)</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      id="txt_impuesto"
+                      value="0"
+                      class="form-control col-12"
+                      disabled
+                    />
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><label for="subtotal">Total($)</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      id="txt_total"
+                      value="0"
+                      class="form-control col-12"
+                      disabled
+                    />
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td style="text-align: right">
+                    <button
+                      type="button"
+                      class="btn btn-danger btn-block"
+                      id="btn_confirmar"
+                    >
+                      Confirmar Pedido
+                    </button>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/carrito.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+[
+  {
+    "id": "1",
+    "codigo": "0001",
+    "nombre": "casaca",
+    "descripcion": "Gabardina de lana de gran oferta para hombre abrigo de invierno cálido de Color liso prendas d YUA",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/jacket_bomber_leather_clothes-128.png",
+    "precio": "33",
+    "stock": "100"
+  },
+  {
+    "id": 2,
+    "timestamp": "18/12/2021",
+    "nombre": "casaca",
+    "descripcion": "Chompa Hombre Newport Fz Greg I20-Verde",
+    "codigo": "0002",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/coat_wear_clothes_jacket-128.png",
+    "precio": 40,
+    "stock": 250
+  },
+  {
+    "id": 3,
+    "timestamp": "18/12/2021",
+    "nombre": "casaca",
+    "descripcion": "Abrigo Hombre Christian Lacroix Jkt Detanv W20-Negro",
+    "codigo": "0003",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/shirt_long_sleeve_clothes-128.png",
+    "precio": 60,
+    "stock": 600
+  },
+  {
+    "id": 4,
+    "timestamp": "18/12/2021",
+    "nombre": "Abrigo",
+    "descripcion": "Abrigo Hombre Basement Jkt Tednv W20-Negro",
+    "codigo": "0004",
+    "foto_url": "https://cdn2.iconfinder.com/data/icons/men-clothes/512/men-clothes-fashion-03-128.png",
+    "precio": 60,
+    "stock": 600
+  },
+  {
+    "id": 5,
+    "timestamp": "18/12/2021",
+    "nombre": "Abrigo",
+    "descripcion": "Abrigo de lana corto para hombre abrigo de lana cálido para hombre de mediana edad chaquetas g MIS",
+    "codigo": "0005",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/coat_trench_clothes_fashion-128.png",
+    "precio": 75,
+    "stock": 900
+  },
+  {
+    "codigo": "0006",
+    "nombre": "casaca",
+    "descripcion": "nueva casaca",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/jacket_bomber_leather_clothes-128.png",
+    "precio": 30,
+    "stock": 100,
+    "id": 6,
+    "timestamp": 1639958751902
+  },
+  {
+    "codigo": "0007",
+    "nombre": "casaca",
+    "descripcion": "nueva casaca",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/jacket_bomber_leather_clothes-128.png",
+    "precio": 30,
+    "stock": 100,
+    "id": 7,
+    "timestamp": 1639958887854
+  },
+  {
+    "codigo": "0008",
+    "nombre": "casaca",
+    "descripcion": "nueva casaca",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/jacket_bomber_leather_clothes-128.png",
+    "precio": 30,
+    "stock": 100,
+    "id": 8,
+    "timestamp": 1639958908812
+  },
+  {
+    "codigo": "0009",
+    "nombre": "casacas",
+    "descripcion": "descripcion nuevo",
+    "foto_url": "https://cdn4.iconfinder.com/data/icons/office-and-business-conceptual-flat/169/1-128.png",
+    "precio": "40",
+    "stock": "250",
+    "id": 9,
+    "timestamp": 1640035385277
+  },
+  {
+    "codigo": "0010",
+    "nombre": "casaca",
+    "descripcion": "descripcion form",
+    "foto_url": "https://cdn4.iconfinder.com/data/icons/office-and-business-conceptual-flat/169/1-128.png",
+    "precio": "40",
+    "stock": "500",
+    "id": 10,
+    "timestamp": 1640035570180
+  },
+  {
+    "codigo": "0011",
+    "nombre": "casaca",
+    "descripcion": "casacas 2021",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/shorts_sports_clothes_pants-128.png",
+    "precio": "50",
+    "stock": "800",
+    "id": 11,
+    "timestamp": 1640036398048
+  },
+  {
+    "codigo": "0012",
+    "nombre": "casacaj",
+    "descripcion": "casaca cuero",
+    "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/coat_trench_clothes_fashion-128.png",
+    "precio": "45",
+    "stock": "250",
+    "id": 15,
+    "timestamp": 1640036706008
+  }
+]

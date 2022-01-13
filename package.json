@@ -1,0 +1,34 @@
+{
+  "name": "proyectexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clase_05e.js",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-handlebars": "^6.0.2",
+    "joi": "^17.5.0",
+    "mongoose": "^6.1.6",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2",
+    "socket.io": "4.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcachom/proyectexpress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcachom/proyectexpress/issues"
+  },
+  "homepage": "https://github.com/jcachom/proyectexpress#readme"
+}

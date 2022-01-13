@@ -1,0 +1,302 @@
+@media only screen and (min-width: 200px) {
+  .container .divHeader {
+    background-color: orange;
+  }
+
+  .container .grid footer .footer_sec1 {
+    background-color: orange;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .container .divHeader {
+    background-color: #1459ba;
+  }
+
+  .container .grid footer .footer_sec1 {
+    background-color: #1459ba;
+  }
+}
+
+.divHeader {
+  background-color: #1459ba;
+  color: white;
+  padding-top: 10px;
+
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 4px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.divContenido {
+  vertical-align: middle;
+  font-size: 13px;
+}
+
+.divForm {
+  margin: 25px auto;
+}
+
+.divProductos {
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+}
+
+.imgNavbar {
+  height: 40px;
+}
+
+.ptitulo {
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, orange, yellow);
+  font-size: 30px;
+  font: oblique bold 120% cursive;
+}
+
+.pCarrito {
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, red, yellow);
+  font-size: 15px;
+}
+
+.psubtitulo {
+  background-color: whitesmoke;
+  font-weight: bold;
+  color: black;
+  font: oblique bold 90% cursive;
+}
+
+.headerCaption_1 {
+  background-color: whitesmoke;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  border-radius: 25px;
+  opacity: 0.7;
+}
+
+.headerCaption_2 {
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nosotros nosotros"
+    "productos productos"
+    "footer footer";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
+header {
+  grid-area: header;
+}
+footer {
+  grid-area: footer;
+}
+section#nosotros {
+  grid-area: nosotros;
+}
+
+section#productos {
+  grid-area: productos;
+}
+
+.padreFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.headerContacto {
+  background-color: orange;
+  opacity: 0.7;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btnConfirmar {
+  background-color: orange;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  width: 100%;
+}
+
+form label {
+  padding: 5px;
+  width: 80px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.footer_sec1 {
+  padding-top: 15px;
+
+  background-color: #1459ba;
+  color: white;
+  opacity: 0.9;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 3px;
+  font: oblique bold 70% cursive;
+}
+
+.footer_sec2 {
+  padding-top: 3px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  font: oblique bold 80% cursive;
+}
+
+.product_img {
+  text-align: right;
+}
+
+/* ---------Efectos--------- */
+
+.overlay-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.overlay-item .mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.overlay-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay-item h3 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: 0px 0px 20px 0px;
+  display: block;
+  background-color: #333;
+  color: #fff;
+}
+.overlay-item p {
+  text-align: left;
+}
+
+.overlay-effect img {
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.overlay-effect .mask {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.overlay-effect h3 {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.overlay-effect p {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  font-size: 20px;
+}
+
+.overlay-effect:hover img {
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.overlay-effect:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.overlay-effect:hover h4 {
+  color: white;
+}
+
+.overlay-effect:hover h3,
+.overlay-effect:hover p,
+.overlay-effect:hover a.btn {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.cardsFlex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

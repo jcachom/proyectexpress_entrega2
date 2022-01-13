@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Venta" />
+    <meta name="keywords" content="Ventas" />
+    <title>Venta Abrigos</title>
+
+   
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="stylesheet" href="estilos/estiloSas.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/sweetalert2.all.js"></script>
+    <script src="src/sweetAlert.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="divHeader" id="divHeader">ABRIGOS PARA EL MUNDO</header>
+
+      <nav id="navHeader" class="navbar navbar-expand-sm navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#opciones"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- logo -->
+
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul id="ulMenu" class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="carrito.html">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-8">Carrito</div>
+                    <div id="divCantCarrito" class="col-sm-4 pCarrito"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="imagen/navBar_pag.png"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-md-block">
+              <p class="headerCaption_1">Descuentos</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="imagen/navBar_pag02.jpg"
+              alt="Third slide"
+            />
+
+            <div class="carousel-caption d-md-block">
+              <p class="headerCaption_1">Llevamos el pedido hasta tu hogar</p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"> </span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"> </span>
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="tab-content">
+            <div class="tab-pane active" id="divPanel_listado">
+              <button
+                type="button"
+                class="btn btn-warning"
+                id="btnnuevo_producto"
+              >
+                <i class="fa fa-save"></i>Agregar Producto
+              </button>
+
+              <div id="divSeccion1"></div>
+            </div>
+
+            <div class="tab-pane" id="divPanel_preview"></div>
+
+            <div class="tab-pane" id="divPanel_edit">
+              <form action="/" method="post" id="form_regproducto">
+                <h3>
+                  <div id="div_accionProducto"></div>
+                </h3>
+
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  id="btnguardar_producto"
+                >
+                  <i class="fa fa-save"></i>Guardar Producto
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  id="btnedit_regresar"
+                >
+                  <i class="fa fa-save"></i>Regresar
+                </button>
+
+                <div id="div_msj_regproducto"></div>
+
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Id</label
+                      >
+                      <input
+                        type="text"
+                        id="txt_id"
+                        name="txt_id"
+                        value=""
+                        class="form-control"
+                        required
+                        disabled
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Código</label
+                      >
+                      <input
+                        type="text"
+                        id="txt_codigo"
+                        name="txt_codigo"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Nombre</label
+                      >
+                      <input
+                        type="text"
+                        id="txt_nombre"
+                        name="txt_nombre"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Descripc.</label
+                      >
+                      <input
+                        type="text"
+                        id="txt_descripcion"
+                        name="txt_descripcion"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >url foto</label
+                      >
+                      <input
+                        type="url"
+                        id="txt_foto_url"
+                        name="txt_foto_url"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Precio</label
+                      >
+                      <input
+                        type="number"
+                        id="txt_precio"
+                        name="txt_precio"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="text-left">
+                      <label for="lbl" class="col-form-label-sm padding-lbl"
+                        >Stock</label
+                      >
+                      <input
+                        type="number"
+                        id="txt_stock"
+                        name="txt_stock"
+                        value=""
+                        class="form-control"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section id="productos"></section>
+
+        <footer>
+          <div class="footer_sec1">
+            <img src="imagen/img_map.png" alt="" class="footer_img" />
+            <label for="nombre" class="col-lg-4 control-label"
+              >Av. Alameda 265</label
+            >
+
+            <img src="imagen/img_phone.png" alt="" />
+            <label for="nombre" class="col-lg-4 control-label">01-235487</label>
+          </div>
+
+          <div class="footer_sec2">
+            <img src="imagen/img_facebook.png" alt="" />
+            <img src="imagen/img_instagram.png" alt="" />
+            <img src="imagen/img_twitter.png" alt="" />
+            <p>Todos los derechos reservados 2021</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

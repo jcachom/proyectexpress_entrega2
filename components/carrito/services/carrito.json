@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "timestamp": "18/12/2021",
+    "productos": [
+      {
+        "id": 1,
+        "timestamp": "18/12/2021",
+        "nombre": "casaca",
+        "descripcion": "Gabardina de lana de gran oferta para hombre abrigo de invierno cálido de Color liso prendas d YUA",
+        "codigo": "0001",
+        "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/jacket_bomber_leather_clothes-128.png",
+        "precio": 30,
+        "stock": 2,
+        "cant_pedido": 1
+      },
+      {
+        "id": 2,
+        "timestamp": "18/12/2021",
+        "nombre": "casaca",
+        "descripcion": "Chompa Hombre Newport Fz Greg I20-Verde",
+        "codigo": "0002",
+        "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/coat_wear_clothes_jacket-128.png",
+        "precio": 40,
+        "stock": 250,
+        "cant_pedido": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": 1640013284578,
+    "productos": [
+      {
+        "id": 3,
+        "timestamp": "18/12/2021",
+        "nombre": "casaca",
+        "descripcion": "Chompa Hombre Newport Fz Greg I20-Verde",
+        "codigo": "0002",
+        "foto_url": "https://cdn3.iconfinder.com/data/icons/fashion-beauty-vol-1/512/coat_wear_clothes_jacket-128.png",
+        "precio": 40,
+        "stock": 250,
+        "cant_pedido": 3
+      }
+    ]
+  },
+  {
+    "usuario": "jcachom",
+    "id": 3,
+    "timestamp": 1640115129646,
+    "productos": []
+  }
+]
